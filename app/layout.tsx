@@ -1,25 +1,31 @@
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Plus_Jakarta_Sans } from "next/font/google"
 import "./globals.css"
 
 // ============================================================
-// F U E N T E   D E   M A R C A   (placeholder configurable)
+// T I P O G R A F Í A   T I E N D A N U B E
 // ------------------------------------------------------------
-// Reemplazá Geist por la tipografía variable de tu marca/campaña
-// cuando tengas las brand guidelines. Ej:
-//   import { Inter } from "next/font/google";
-//   const fontSans = Inter({ variable: "--font-sans", subsets: ["latin"] });
-// luego aplicá fontSans.variable en <html> y actualizá @theme en globals.css.
+// Principal: Plus Jakarta Sans (variable, vía Google Fonts).
+// Editorial (headlines hero): IvyPresto Display Light Italic
+//   — fuente comercial de Sharp Type, se carga con next/font/local.
+//   Los archivos .woff2 licenciados NO están en el repo todavía.
 // ============================================================
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const pjs = Plus_Jakarta_Sans({
+  variable: "--font-pjs",
   subsets: ["latin"],
 })
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-})
+// TODO: agregar los archivos .woff2 licenciados de
+// IvyPresto Display Light Italic en /public/fonts/ivypresto/ y
+// descomentar el bloque siguiente para activar --font-ivypresto.
+// NO descargar ni inventar una fuente "parecida" sin aprobación.
+//
+// import localFont from "next/font/local"
+// const ivyPresto = localFont({
+//   src: [{ path: "./fonts/...", weight: "300", style: "italic" }],
+//   variable: "--font-ivypresto",
+//   display: "swap",
+// })
 
 export const metadata: Metadata = {
   title: {
@@ -35,10 +41,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html
-      lang="es"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
+    <html lang="es" className={`${pjs.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">{children}</body>
     </html>
   )
