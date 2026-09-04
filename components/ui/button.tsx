@@ -20,12 +20,12 @@ const buttonVariants = cva(
       variant: {
         // primary (light) — azul de marca sobre fondo claro
         default:
-          "bg-primary text-primary-foreground hover:bg-secondary-dark-100 disabled:bg-neutral-400 disabled:text-neutral-300 dark:bg-primary-light-100 dark:hover:bg-primary-light-200",
+          "bg-primary text-white hover:bg-secondary-dark-100 disabled:bg-neutral-400 dark:bg-primary-light-100 dark:hover:bg-primary-light-200",
         // secondary (light) — outline azul transparente
         outline:
-          "border-primary bg-transparent text-primary hover:bg-primary-light-200 disabled:border-neutral-300 disabled:text-neutral-300 dark:border-primary-light-100 dark:text-primary-light-100 dark:hover:bg-primary-light-100/10",
+          "border-primary bg-transparent text-white hover:bg-primary-light-200 disabled:border-neutral-300 disabled:text-neutral-300 dark:border-primary-light-100 dark:text-primary-light-100 dark:hover:bg-primary-light-100/10",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-[color-mix(in_oklch,var(--secondary),var(--foreground)_5%)] aria-expanded:bg-secondary aria-expanded:text-secondary-foreground",
+          "bg-secondary text-white hover:bg-[color-mix(in_oklch,var(--secondary),var(--foreground)_5%)] aria-expanded:bg-secondary aria-expanded:text-secondary-foreground",
         ghost:
           "hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50",
         destructive:
@@ -71,9 +71,11 @@ function Button({
   icon,
   iconPosition = "end",
   children,
+  render,
   ...props
 }: ButtonProps) {
   const isLink = variant === "link" || variant === "link-dark"
+  const hasCustomRender = !!render
 
   const iconEl =
     icon !== undefined ? (
@@ -96,6 +98,8 @@ function Button({
     <ButtonPrimitive
       data-slot="button"
       className={cn(buttonVariants({ variant, size, className }))}
+      nativeButton={!hasCustomRender}
+      render={render}
       {...props}
     >
       {iconPosition === "start" && iconEl}

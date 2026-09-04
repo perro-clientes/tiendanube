@@ -76,7 +76,8 @@ Variables de entorno: copiá `.env.example` a `.env.local` si necesitás hooks d
    // app/(landings)/mi-landing/page.tsx
    import type { Metadata } from "next"
    import content from "@/content/mi-landing"
-   import { Navbar, Hero, FeatureGrid, CTASection, Footer } from "@/components/marketing"
+   import { Navbar, Footer } from "@/components/layout"
+   import { Hero, FeatureGrid, CTASection } from "@/components/marketing"
 
    export const metadata: Metadata = {
      title: content.seo.title,

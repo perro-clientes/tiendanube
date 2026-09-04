@@ -66,19 +66,15 @@ tiendanube/
 │   ├── (landings)/              → Route group para landings (una carpeta por slug)
 │   ├── globals.css              → Design tokens + escala tipográfica + Tailwind theme
 │   ├── layout.tsx               → Layout raíz: Plus Jakarta Sans + metadata template
-│   └── page.tsx                 → Home placeholder (vacío)
+│   └── page.tsx                 → Home con Navbar + Hero + CTA + Footer
 ├── components/
+│   ├── layout/                  → Componentes de sitio (Navbar, Footer)
+│   │   ├── index.ts             → Barrel exports
+│   │   ├── navbar.tsx           → Navbar responsive con scroll effect
+│   │   └── footer.tsx           → Footer con columnas de links
 │   ├── marketing/               → Secciones reutilizables para landings
 │   │   ├── index.ts             → Barrel exports
-│   │   ├── navbar.tsx           → Navbar responsive con Sheet mobile
-│   │   ├── hero.tsx             → Hero principal con CTA
 │   │   ├── logo-wall.tsx        → Fila de logos de confianza
-│   │   ├── feature-grid.tsx     → Grilla de features con cards
-│   │   ├── pricing-table.tsx    → Tabla de planes de precio
-│   │   ├── faq-accordion.tsx    → Preguntas frecuentes (client component)
-│   │   ├── testimonials.tsx     → Citas de clientes
-│   │   ├── cta-section.tsx      → Bloque final de conversión
-│   │   ├── footer.tsx           → Footer con columnas de links
 │   │   └── fade-in.tsx          → Wrapper de animación (client component)
 │   └── ui/                      → Componentes shadcn/ui (no modificar)
 │       ├── accordion.tsx
@@ -109,18 +105,19 @@ tiendanube/
 
 ---
 
-## 5. COMPONENTES MARKETING DISPONIBLES
+## 5. COMPONENTES DISPONIBLES
 
-| Componente | Tipo de contenido | Requerido | Descripción |
-|------------|-------------------|-----------|-------------|
-| `Navbar` | `NavbarContent` | Sí | Navbar sticky con logo, links y CTA. Mobile: Sheet |
-| `Hero` | `HeroContent` | Sí | Bloque principal con kicker, título, subtítulo, CTAs e imagen opcional |
-| `LogoWall` | `LogoWallContent` | No | Fila de logos de confianza sobre fondo muted |
-| `FeatureGrid` | `FeatureGridContent` | No | Grilla de 3 columnas con iconos, título y descripción |
-| `PricingTable` | `PricingTableContent` | No | 3 columnas de planes con features y CTA |
-| `FAQAccordion` | `FAQContent` | No | Acordeón de preguntas frecuentes |
-| `Testimonials` | `TestimonialsContent` | No | Grid de cards con citas de clientes |
-| `CTASection` | `CTASectionContent` | Sí | Bloque final de conversión con fondo primary |
+### Layout (`components/layout/`)
+| Componente | Tipo de contenido | Descripción |
+|------------|-------------------|-------------|
+| `Navbar` | `NavbarContent` | Navbar responsive con scroll effect y hamburger animado |
+| `Footer` | `FooterContent` | Footer con columnas de links, legal y copyright |
+
+### Marketing (`components/marketing/`)
+| Componente | Tipo de contenido | Descripción |
+|------------|-------------------|-------------|
+| `LogoWall` | `LogoWallContent` | Fila de logos de confianza sobre fondo muted |
+| `FadeIn` | N/A (wrapper) | Animación fade + translateY para micro-interacciones |
 | `Footer` | `FooterContent` | Sí | Footer con columnas de links, legal y copyright |
 | `FadeIn` | N/A (wrapper) | No | Animación fade + translateY para micro-interacciones |
 
@@ -135,7 +132,8 @@ tiendanube/
    // app/(landings)/mi-landing/page.tsx
    import type { Metadata } from "next"
    import content from "@/content/mi-landing"
-   import { Navbar, Hero, CTASection, Footer } from "@/components/marketing"
+   import { Navbar, Footer } from "@/components/layout"
+   import { LogoWall } from "@/components/marketing"
    
    export const metadata: Metadata = {
      title: content.seo.title,
@@ -147,8 +145,7 @@ tiendanube/
        <>
          <Navbar data={content.navbar} />
          <main className="flex-1">
-           <Hero data={content.hero} />
-           <CTASection data={content.ctaSection} />
+           <LogoWall data={content.logoWall} />
          </main>
          <Footer data={content.footer} />
        </>

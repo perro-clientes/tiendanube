@@ -20,52 +20,50 @@
   --font-ivypresto: var(--font-pjs);
 
   /* ---- Primary ------------------------------------------- */
-  --tiendanube-primary-dark-200: oklch(0.1562 -0.01 0.1373); /* #010B23 */
-  --tiendanube-primary-pure-100: oklch(0.4682 -0.033 0.7647); /* #0050C3 */
-  --tiendanube-primary-light-100: oklch(0.8125 -0.048 1); /* #84CAFF */
-  --tiendanube-primary-light-200: oklch(0.9409 -0.0119 1); /* #DCEEFF */
-  --tiendanube-primary-light-300: oklch(0.9828 -0.0032 1); /* #F5FAFF */
-  --tiendanube-primary-light-400: oklch(1 0 1); /* #FFFFFF */
+  --tiendanube-primary-dark-200: oklch(0.1562 0.0544 259.37); /* #010B23 */
+  --tiendanube-primary-pure-100: oklch(0.4682 0.1922 260.11); /* #0050C3 */
+  --tiendanube-primary-light-100: oklch(0.8125 0.1032 242.28); /* #84CAFF */
+  --tiendanube-primary-light-200: oklch(0.9409 0.0301 246.64); /* #DCEEFF */
+  --tiendanube-primary-light-300: oklch(0.9828 0.0086 248.07); /* #F5FAFF */
+  --tiendanube-primary-light-400: oklch(1.0000 0.0001 263.28); /* #FFFFFF */
 
   /* ---- Secondary ----------------------------------------- */
-  --tiendanube-secondary-dark-100: oklch(0.4102 -0.0139 0.7333); /* #1732BB */
-  --tiendanube-secondary-light-100: oklch(0.7177 -0.0948 0.902); /* #00B4E6 */
+  --tiendanube-secondary-dark-100: oklch(0.4102 0.2131 266.27); /* #1732BB */
+  --tiendanube-secondary-light-100: oklch(0.7177 0.1382 226.68); /* #00B4E6 */
 
   /* ---- Neutral ------------------------------------------- */
   /* NOTA Figma: neutral-400 y neutral-500 figuran con el mismo hex
      (#F7F7F7). Se implementan tal cual vienen; si al usarlos en
      pantalla no se distinguen, preguntar a diseño (no inventar valor). */
-  --tiendanube-neutral-100: oklch(0.1562 -0.01 0.1373); /* #010B23 */
-  --tiendanube-neutral-200: oklch(0.3057 -0.0047 0.2706); /* #242F45 */
-  --tiendanube-neutral-300: oklch(0.6001 -0.0055 0.5725); /* #768192 */
-  --tiendanube-neutral-400: oklch(0.9761 0 0.9686); /* #F7F7F7 */
-  --tiendanube-neutral-500: oklch(
-    0.9761 0 0.9686
-  ); /* #F7F7F7 (igual que 400) */
+  --tiendanube-neutral-100: oklch(0.1562 0.0544 259.37); /* #010B23 */
+  --tiendanube-neutral-200: oklch(0.3057 0.0428 263.64); /* #242F45 */
+  --tiendanube-neutral-300: oklch(0.6001 0.0291 259.05); /* #768192 */
+  --tiendanube-neutral-400: oklch(0.9761 0.0001 263.28); /* #F7F7F7 */
+  --tiendanube-neutral-500: oklch(0.9761 0.0001 263.28); /* #F7F7F7 */
 
   /* ---- Text ---------------------------------------------- */
-  --tiendanube-text-dark-100: oklch(0.1562 -0.01 0.1373); /* #010B23 */
-  --tiendanube-text-dark-200: oklch(0.6001 -0.0055 0.5725); /* #768192 */
-  --tiendanube-text-light-100: oklch(0.9761 0 0.9686); /* #F7F7F7 */
-  --tiendanube-text-light-200: oklch(1 0 1); /* #FFFFFF */
+  --tiendanube-text-dark-100: oklch(0.1562 0.0544 259.37); /* #010B23 */
+  --tiendanube-text-dark-200: oklch(0.6001 0.0291 259.05); /* #768192 */
+  --tiendanube-text-light-100: oklch(0.9761 0.0001 263.28); /* #F7F7F7 */
+  --tiendanube-text-light-200: oklch(1.0000 0.0001 263.28); /* #FFFFFF */
 
   /* ---- Support (estados / data viz / badges) ------------- */
-  --tiendanube-red-dark-100: oklch(0.5231 0.1876 0.0118); /* #C80003 */
-  --tiendanube-red-dark-200: oklch(0.5537 0.1771 0.3647); /* #C3355D */
-  --tiendanube-red-light-100: oklch(0.7924 0.1131 0.6118); /* #FF9B9C */
-  --tiendanube-red-light-200: oklch(0.8858 0.0577 0.7961); /* #FFCACB */
-  --tiendanube-orange-dark-100: oklch(0.6503 0.0557 0); /* #C87B00 */
-  --tiendanube-orange-dark-200: oklch(0.7242 0.1248 0.1529); /* #FF7A27 */
-  --tiendanube-orange-light-100: oklch(0.8062 0.0766 0.4471); /* #FFA872 */
-  --tiendanube-orange-light-200: oklch(0.856 0.0538 0.6); /* #FFC099 */
-  --tiendanube-yellow-dark-100: oklch(0.7187 -0.0014 0.0078); /* #C79F02 */
-  --tiendanube-yellow-dark-200: oklch(0.887 -0.0353 0.0941); /* #F4DC18 */
-  --tiendanube-yellow-light-100: oklch(0.887 -0.0353 0.0941); /* #F4DC18 */
-  --tiendanube-yellow-light-200: oklch(0.9465 -0.0291 0.498); /* #FFF17F */
-  --tiendanube-green-dark-100: oklch(0.5841 -0.1268 0.3569); /* #00935B */
-  --tiendanube-green-dark-200: oklch(0.7389 -0.1844 0.2941); /* #00CD4B */
-  --tiendanube-green-light-100: oklch(0.7728 -0.159 0.5608); /* #1FD58F */
-  --tiendanube-green-light-200: oklch(0.9188 -0.1224 0.7373); /* #96FFBC */
+  --tiendanube-red-dark-100: oklch(0.5231 0.2144 28.94); /* #C80003 */
+  --tiendanube-red-dark-200: oklch(0.5537 0.1791 8.67); /* #C3355D */
+  --tiendanube-red-light-100: oklch(0.7924 0.1199 19.43); /* #FF9B9C */
+  --tiendanube-red-light-200: oklch(0.8858 0.0604 17.03); /* #FFCACB */
+  --tiendanube-orange-dark-100: oklch(0.6503 0.1435 67.18); /* #C87B00 */
+  --tiendanube-orange-dark-200: oklch(0.7243 0.1841 47.31); /* #FF7A27 */
+  --tiendanube-orange-light-100: oklch(0.8062 0.1243 51.97); /* #FFA872 */
+  --tiendanube-orange-light-200: oklch(0.8560 0.0892 52.92); /* #FFC099 */
+  --tiendanube-yellow-dark-100: oklch(0.7187 0.1465 90.56); /* #C79F02 */
+  --tiendanube-yellow-dark-200: oklch(0.8870 0.1817 101.19); /* #F4DC18 */
+  --tiendanube-yellow-light-100: oklch(0.8870 0.1817 101.19); /* #F4DC18 */
+  --tiendanube-yellow-light-200: oklch(0.9465 0.1360 102.35); /* #FFF17F */
+  --tiendanube-green-dark-100: oklch(0.5841 0.1368 157.95); /* #00935B */
+  --tiendanube-green-dark-200: oklch(0.7389 0.2201 146.94); /* #00CD4B */
+  --tiendanube-green-light-100: oklch(0.7727 0.1692 160.09); /* #1FD58F */
+  --tiendanube-green-light-200: oklch(0.9188 0.1353 154.78); /* #96FFBC */
 
   /* ---- Gradiente radial de marca (Figma: Gradients/radial rebranding 2025) ---- */
   --gradient-tiendanube: radial-gradient(
@@ -79,26 +77,26 @@
      sección Gradients en Colors.png) — aún no sacados del Figma */
 
   /* ========================================================
-     TOKENS SEMÁNTICOS shadcn (mapeados a la marca)
+     TOKENS SEMÁNTICOS (mapeados directo a raw de Tiendanube)
      ======================================================== */
-  --background: var(--tiendanube-neutral-400); /* #F7F7F7 claro */
-  --foreground: var(--tiendanube-text-dark-100); /* #010B23 */
-  --card: var(--tiendanube-primary-light-400); /* blanco */
+  --background: var(--tiendanube-neutral-400);
+  --foreground: var(--tiendanube-text-dark-100);
+  --card: var(--tiendanube-primary-light-400);
   --card-foreground: var(--tiendanube-text-dark-100);
   --popover: var(--tiendanube-primary-light-400);
   --popover-foreground: var(--tiendanube-text-dark-100);
-  --primary: var(--tiendanube-primary-pure-100); /* #0050C3 */
-  --primary-foreground: var(--tiendanube-text-light-200); /* blanco */
-  --secondary: var(--tiendanube-secondary-light-100); /* #00B4E6 */
+  --primary: var(--tiendanube-primary-pure-100);
+  --primary-foreground: var(--tiendanube-text-light-200);
+  --secondary: var(--tiendanube-secondary-light-100);
   --secondary-foreground: var(--tiendanube-text-light-200);
-  --muted: var(--tiendanube-neutral-400); /* #F7F7F7 */
-  --muted-foreground: var(--tiendanube-text-dark-200); /* #768192 */
-  --accent: var(--tiendanube-primary-light-200); /* #DCEEFF */
-  --accent-foreground: var(--tiendanube-primary-dark-200); /* #010B23 */
-  --destructive: var(--tiendanube-red-dark-100); /* #C80003 */
-  --border: oklch(0.6001 -0.0055 0.5725 / 0.25); /* neutral-300 al 25% */
-  --input: oklch(0.6001 -0.0055 0.5725 / 0.35); /* neutral-300 al 35% */
-  --ring: var(--tiendanube-primary-pure-100); /* #0050C3 */
+  --muted: var(--tiendanube-neutral-400);
+  --muted-foreground: var(--tiendanube-text-dark-200);
+  --accent: var(--tiendanube-primary-light-200);
+  --accent-foreground: var(--tiendanube-primary-dark-200);
+  --destructive: var(--tiendanube-red-dark-100);
+  --border: oklch(0.6001 -0.0055 0.5725 / 0.25);
+  --input: oklch(0.6001 -0.0055 0.5725 / 0.35);
+  --ring: var(--tiendanube-primary-pure-100);
   --chart-1: var(--tiendanube-primary-pure-100);
   --chart-2: var(--tiendanube-secondary-light-100);
   --chart-3: var(--tiendanube-green-dark-200);
@@ -148,77 +146,75 @@
    @theme — expone tokens como utilidades de Tailwind
    ============================================================ */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--tiendanube-neutral-400);
+  --color-foreground: var(--tiendanube-text-dark-100);
   --font-sans: var(--font-pjs);
   --font-heading: var(--font-pjs);
   --font-editorial: var(--font-ivypresto);
 
-  /* colors de marca (raw) disponibles como: bg-/text-/border-... */
-  --color-primary-dark-200: var(--tiendanube-primary-dark-200);
-  --color-primary-pure-100: var(--tiendanube-primary-pure-100);
-  --color-primary-light-100: var(--tiendanube-primary-light-100);
-  --color-primary-light-200: var(--tiendanube-primary-light-200);
-  --color-primary-light-300: var(--tiendanube-primary-light-300);
-  --color-primary-light-400: var(--tiendanube-primary-light-400);
-  --color-secondary-dark-100: var(--tiendanube-secondary-dark-100);
-  --color-secondary-light-100: var(--tiendanube-secondary-light-100);
-  --color-neutral-100: var(--tiendanube-neutral-100);
-  --color-neutral-200: var(--tiendanube-neutral-200);
-  --color-neutral-300: var(--tiendanube-neutral-300);
-  --color-neutral-400: var(--tiendanube-neutral-400);
-  --color-neutral-500: var(--tiendanube-neutral-500);
-  --color-text-dark-100: var(--tiendanube-text-dark-100);
-  --color-text-dark-200: var(--tiendanube-text-dark-200);
-  --color-text-light-100: var(--tiendanube-text-light-100);
-  --color-text-light-200: var(--tiendanube-text-light-200);
-  --color-red-dark-100: var(--tiendanube-red-dark-100);
-  --color-red-dark-200: var(--tiendanube-red-dark-200);
-  --color-red-light-100: var(--tiendanube-red-light-100);
-  --color-red-light-200: var(--tiendanube-red-light-200);
-  --color-orange-dark-100: var(--tiendanube-orange-dark-100);
-  --color-orange-dark-200: var(--tiendanube-orange-dark-200);
-  --color-orange-light-100: var(--tiendanube-orange-light-100);
-  --color-orange-light-200: var(--tiendanube-orange-light-200);
-  --color-yellow-dark-100: var(--tiendanube-yellow-dark-100);
-  --color-yellow-dark-200: var(--tiendanube-yellow-dark-200);
-  --color-yellow-light-100: var(--tiendanube-yellow-light-100);
-  --color-yellow-light-200: var(--tiendanube-yellow-light-200);
-  --color-green-dark-100: var(--tiendanube-green-dark-100);
-  --color-green-dark-200: var(--tiendanube-green-dark-200);
-  --color-green-light-100: var(--tiendanube-green-light-100);
-  --color-green-light-200: var(--tiendanube-green-light-200);
+  --color-primary-dark-200: oklch(0.1562 0.0544 259.37);
+  --color-primary-pure-100: oklch(0.4682 0.1922 260.11);
+  --color-primary-light-100: oklch(0.8125 0.1032 242.28);
+  --color-primary-light-200: oklch(0.9409 0.0301 246.64);
+  --color-primary-light-300: oklch(0.9828 0.0086 248.07);
+  --color-primary-light-400: oklch(1.0000 0.0001 263.28);
+  --color-secondary-dark-100: oklch(0.4102 0.2131 266.27);
+  --color-secondary-light-100: oklch(0.7177 0.1382 226.68);
+  --color-neutral-100: oklch(0.1562 0.0544 259.37);
+  --color-neutral-200: oklch(0.3057 0.0428 263.64);
+  --color-neutral-300: oklch(0.6001 0.0291 259.05);
+  --color-neutral-400: oklch(0.9761 0.0001 263.28);
+  --color-neutral-500: oklch(0.9761 0.0001 263.28);
+  --color-text-dark-100: oklch(0.1562 0.0544 259.37);
+  --color-text-dark-200: oklch(0.6001 0.0291 259.05);
+  --color-text-light-100: oklch(0.9761 0.0001 263.28);
+  --color-text-light-200: oklch(1.0000 0.0001 263.28);
+  --color-red-dark-100: oklch(0.5231 0.2144 28.94);
+  --color-red-dark-200: oklch(0.5537 0.1791 8.67);
+  --color-red-light-100: oklch(0.7924 0.1199 19.43);
+  --color-red-light-200: oklch(0.8858 0.0604 17.03);
+  --color-orange-dark-100: oklch(0.6503 0.1435 67.18);
+  --color-orange-dark-200: oklch(0.7243 0.1841 47.31);
+  --color-orange-light-100: oklch(0.8062 0.1243 51.97);
+  --color-orange-light-200: oklch(0.8560 0.0892 52.92);
+  --color-yellow-dark-100: oklch(0.7187 0.1465 90.56);
+  --color-yellow-dark-200: oklch(0.8870 0.1817 101.19);
+  --color-yellow-light-100: oklch(0.8870 0.1817 101.19);
+  --color-yellow-light-200: oklch(0.9465 0.1360 102.35);
+  --color-green-dark-100: oklch(0.5841 0.1368 157.95);
+  --color-green-dark-200: oklch(0.7389 0.2201 146.94);
+  --color-green-light-100: oklch(0.7727 0.1692 160.09);
+  --color-green-light-200: oklch(0.9188 0.1353 154.78);
 
-  /* tokens semánticos shadcn como utilidades */
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
+  --color-primary: oklch(0.4682 0.1922 260.11);
+  --color-primary-foreground: oklch(1.0000 0.0001 263.28);
+  --color-secondary: oklch(0.7177 0.1382 226.68);
+  --color-secondary-foreground: oklch(1.0000 0.0001 263.28);
+  --color-muted: oklch(0.9761 0.0001 263.28);
+  --color-muted-foreground: oklch(0.6001 0.0291 259.05);
+  --color-accent: oklch(0.9409 0.0301 246.64);
+  --color-accent-foreground: oklch(0.1562 0.0544 259.37);
+  --color-destructive: oklch(0.5231 0.2144 28.94);
+  --color-border: oklch(0.6001 0.0291 259.05 / 0.25);
+  --color-input: oklch(0.6001 0.0291 259.05 / 0.35);
+  --color-ring: oklch(0.4682 0.1922 260.11);
+  --color-card: oklch(1.0000 0.0001 263.28);
+  --color-card-foreground: oklch(0.1562 0.0544 259.37);
+  --color-popover: oklch(1.0000 0.0001 263.28);
+  --color-popover-foreground: oklch(0.1562 0.0544 259.37);
+  --color-sidebar: oklch(1.0000 0.0001 263.28);
+  --color-sidebar-foreground: oklch(0.1562 0.0544 259.37);
+  --color-sidebar-primary: oklch(0.4682 0.1922 260.11);
+  --color-sidebar-primary-foreground: oklch(1.0000 0.0001 263.28);
+  --color-sidebar-accent: oklch(0.9409 0.0301 246.64);
+  --color-sidebar-accent-foreground: oklch(0.1562 0.0544 259.37);
+  --color-sidebar-border: oklch(0.6001 0.0291 259.05 / 0.25);
+  --color-sidebar-ring: oklch(0.4682 0.1922 260.11);
+  --color-chart-1: oklch(0.4682 0.1922 260.11);
+  --color-chart-2: oklch(0.7177 0.1382 226.68);
+  --color-chart-3: oklch(0.7389 0.2201 146.94);
+  --color-chart-4: oklch(0.7243 0.1841 47.31);
+  --color-chart-5: oklch(0.5231 0.2144 28.94);
 
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
@@ -228,11 +224,13 @@
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
 
-  /* Gradiente radial de marca → usability como `bg-gradient-tiendanube`.
-     El radial tiene posición/tamaño custom (132.43% 195.53% at 26.87% 27.78%)
-     que las utilities nativas bg-gradient-to-* no soportan: se aplica vía
-     la CSS variable --gradient-tiendanube definida en :root. */
-  --background-image-gradient-tiendanube: var(--gradient-tiendanube);
+  --background-image-gradient-tiendanube: radial-gradient(
+    132.43% 195.53% at 26.87% 27.78%,
+    #0050c3 0%,
+    #00298f 29.81%,
+    #080558 65.38%,
+    #010b23 100%
+  );
 }
 
 @layer base {
